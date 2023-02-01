@@ -1,0 +1,66 @@
+body {
+  background: url("../images/user.jpg") no-repeat;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+.bg-dark {
+  background-color: #020202 !important;
+}
+i img {
+  width: 5px;
+}
+.img-fluid.about-user-img {
+  height: 32rem !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li,
+.fa-bars {
+  cursor: pointer;
+}
+a.active {
+  color: gold !important;
+  border-bottom: 2px solid gold;
+}
+nav a:hover {
+  border-bottom: 2px solid gold;
+}
+.navbar-brand:hover {
+  border-bottom: none !important;
+}
+.user-img {
+  width: 100%;
+}
+.social {
+  padding: 0;
+  margin-top: 5rem;
+}
+button a.text-warning:hover {
+  color: #020202 !important;
+}
+.home-content,
+.about-content,
+.project-content {
+  position: relative;
+  top: 5rem;
+}
+.bg2-dark {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 770px) {
+  .navbar ul li {
+    margin: 0 2.2rem;
+  }
+}

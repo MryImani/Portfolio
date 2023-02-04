@@ -1,15 +1,26 @@
+:root {
+  --default-font: "Poppins", sans-serif;
+  --user-title-font: "Alfa Slab One", cursive;
+  --brand-font: "Sassy Frass", cursive;
+}
 body {
   background: url("../images/user.jpg") no-repeat;
   color: #fff;
   margin: 0;
   padding: 0;
+  font-family: var(--default-font);
 }
 a {
   text-decoration: none;
   color: #fff;
 }
+.title-font {
+  font-family: var(--default-font);
+}
+
 .display-1 {
-  font-weight: 900 !important;
+  font-family: var(--user-title-font);
+  font-size: 4rem !important;
 }
 .mb-5 {
   margin-bottom: 5rem !important;
@@ -38,6 +49,9 @@ a.active {
 }
 nav a:hover {
   border-bottom: 2px solid gold;
+}
+.navbar-brand {
+  font-family: var(--brand-font);
 }
 .navbar-brand:hover {
   border-bottom: none !important;

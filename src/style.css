@@ -63,6 +63,23 @@ nav a:hover {
   padding: 0;
   margin-top: 5rem;
 }
+.social a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: gold;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.social a:hover {
+  background-color: gold;
+  color: #020202;
+}
 button a.text-warning:hover {
   color: #020202 !important;
 }
@@ -79,5 +96,8 @@ button a.text-warning:hover {
 @media (min-width: 770px) {
   .navbar ul li {
     margin: 0 2.2rem;
+  }
+  .px-0-sm {
+    padding: 0 !important;
   }
 }

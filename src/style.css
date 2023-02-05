@@ -4,11 +4,13 @@
   --brand-font: "Sassy Frass", cursive;
 }
 body {
-  background: url("../images/user.jpg") no-repeat;
   color: #fff;
   margin: 0;
   padding: 0;
   font-family: var(--default-font);
+}
+.bg-img {
+  background: url("../images/user.jpg") no-repeat;
 }
 a {
   text-decoration: none;
@@ -30,9 +32,6 @@ a {
 }
 i img {
   width: 5px;
-}
-.img-fluid.about-user-img {
-  height: 32rem !important;
 }
 
 ul {
@@ -56,8 +55,95 @@ nav a:hover {
 .navbar-brand:hover {
   border-bottom: none !important;
 }
-.user-img {
+.project-content img {
+  height: 258px !important;
+}
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: gold;
+}
+.contact-content .info-box {
+  color: #444444;
+  padding: 20px;
   width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+}
+.contact-content .info-box h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  margin: 10px 0 8px 68px;
+}
+.contact-content .info-box p {
+  padding: 0;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+.contact-content .info-box .title-icon {
+  font-size: 24px;
+  color: gold;
+  border-radius: 50%;
+  padding: 14px;
+  float: left;
+  background: rgba(255, 255, 255, 0.1);
+}
+.contact-content .info-box .social-links {
+  margin: 5px 0 0 68px;
+  display: flex;
+}
+.contact-content .info-box .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  margin-right: 12px;
+  transition: 0.3s;
+}
+.contact-content .info-box .social-links a:hover {
+  color: gold;
+}
+.contact-content .form {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.contact-content .form input {
+  padding: 10px 15px;
+}
+.contact-content .form input,
+.contact-content .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0;
+  transition: 0.3s;
+  color: #fff;
 }
 .social {
   padding: 0;
@@ -75,6 +161,7 @@ nav a:hover {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: all 0.3s ease-in-out;
 }
 .social a:hover {
   background-color: gold;
@@ -85,19 +172,34 @@ button a.text-warning:hover {
 }
 .home-content,
 .about-content,
-.project-content {
+.project-content,
+.contact-content {
   position: relative;
   top: 5rem;
 }
 .bg2-dark {
   background: rgba(0, 0, 0, 0.7);
 }
-
 @media (min-width: 770px) {
   .navbar ul li {
-    margin: 0 2.2rem;
+    margin: 0 3rem;
   }
   .px-0-sm {
     padding: 0 !important;
+  }
+}
+@media (max-width: 1200px) {
+  footer .col-12 {
+    text-align: center;
+  }
+}
+@media (max-width: 770px) {
+  strong.display-1 {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 540px) {
+  strong.display-1 {
+    font-size: 2rem !important;
   }
 }

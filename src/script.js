@@ -1,8 +1,27 @@
-let menuLink = document.querySelectorAll(".menu .menu-link");
-menuLink.forEach((item) => {
+let projectInfo = document.querySelectorAll(".project-info");
+
+projectInfo.forEach((item) => {
+  let trimInfo = item.innerText;
+  let infoLength = 60;
+  item.setAttribute("moreInfo", trimInfo);
+  item.innerText =
+    trimInfo.length > infoLength
+      ? trimInfo.substring(infoLength, length) + " ..... "
+      : trimInfo;
+  item.setAttribute("lessInfo", item.innerText);
+});
+
+let moreInfo = document.querySelectorAll(".more-info");
+moreInfo.forEach((item) => {
   item.addEventListener("click", (e) => {
-    e.target.classList.contains("active")
-      ? e.target.classList.remove("active")
-      : e.target.classList.add("active");
+    if (e.target.innerText === "Read More") {
+      let textInfo = e.target.previousElementSibling.getAttribute("moreInfo");
+      e.target.previousElementSibling.innerText = textInfo;
+      e.target.innerText = "Read Less";
+    } else {
+      let textInfo = e.target.previousElementSibling.getAttribute("lessInfo");
+      e.target.previousElementSibling.innerText = textInfo;
+      e.target.innerText = "Read More";
+    }
   });
 });

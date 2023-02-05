@@ -12,6 +12,12 @@ body {
 .bg-img {
   background: url("../images/user.jpg") no-repeat;
 }
+.bg2-dark {
+  background: rgba(0, 0, 0, 0.7);
+}
+.bg-dark {
+  background-color: #020202 !important;
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -26,12 +32,6 @@ a {
 }
 .mb-5 {
   margin-bottom: 5rem !important;
-}
-.bg-dark {
-  background-color: #020202 !important;
-}
-i img {
-  width: 5px;
 }
 
 ul {
@@ -177,8 +177,17 @@ button a.text-warning:hover {
   position: relative;
   top: 5rem;
 }
-.bg2-dark {
-  background: rgba(0, 0, 0, 0.7);
+
+.credits {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  text-align: right;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999;
 }
 @media (min-width: 770px) {
   .navbar ul li {
@@ -191,6 +200,13 @@ button a.text-warning:hover {
 @media (max-width: 1200px) {
   footer .col-12 {
     text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .credits {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
   }
 }
 @media (max-width: 770px) {

@@ -14,14 +14,14 @@ projectInfo.forEach((item) => {
 let moreInfo = document.querySelectorAll(".more-info");
 moreInfo.forEach((item) => {
   item.addEventListener("click", (e) => {
-    if (e.target.innerText === "Read More") {
+    if (e.target.innerText === "Show More") {
       let textInfo = e.target.previousElementSibling.getAttribute("moreInfo");
       e.target.previousElementSibling.innerText = textInfo;
-      e.target.innerText = "Read Less";
+      e.target.innerText = "Show Less";
     } else {
       let textInfo = e.target.previousElementSibling.getAttribute("lessInfo");
       e.target.previousElementSibling.innerText = textInfo;
-      e.target.innerText = "Read More";
+      e.target.innerText = "Show More";
     }
   });
 });

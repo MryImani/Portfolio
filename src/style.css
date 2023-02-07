@@ -33,6 +33,14 @@ a {
 .mb-5 {
   margin-bottom: 5rem !important;
 }
+.my2 {
+  margin: 18.5rem auto 0 !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 9% !important;
+  margin: 0 -3rem !important;
+}
 
 ul {
   list-style-type: none;
